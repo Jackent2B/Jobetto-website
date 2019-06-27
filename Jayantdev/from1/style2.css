@@ -1,0 +1,810 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+    
+}
+
+body {
+    font-family: 'Lato';
+}
+p{
+	letter-spacing:.3px;
+	font-size:18px;
+}
+.navbar-wrapper{
+	display:none;
+}
+/*navigation bar*/
+
+.logo {
+	height:150px;
+	width:auto;
+	float:left;
+	margin-top:0px;
+	margin-left:3vw;
+}
+.logoonsmall{
+	display:none;
+}
+.logo-black{
+	display:none;
+	height:50px;
+	width:auto;
+	float:left;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:80px;
+}
+.main-nav{
+	float:right;
+	list-style:none;
+	margin-top:40px;
+	
+}
+.main-nav li{
+	display:inline-block;
+	margin-left:40px;
+	
+}
+.lastli{
+	margin-right:100px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited	{
+	padding:8px 0px;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:18px;
+	border-bottom:2px solid transparent;
+	transition:border-bottom 0.2s;
+}
+	
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom:2px solid #1abc9c;
+}
+.main-nav li a{
+	font-size: 15px !important;
+}
+/* mobile navi*/
+.mobile-nav-icon{
+	float:right;
+	margin-top:30px;
+	cursor:pointer;
+	display:none;
+}
+.mobile-nav-icon i{
+	font-size:200%;
+	color:#fff;
+}
+
+
+/*sticky navi*/
+
+
+.sticky{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#fff;  
+	box-shadow:0 2px 2px #efefef;
+}
+.sticky .main-nav{
+	
+	margin-top:18px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited	{
+	padding:21px 0px;
+	color:#555;
+	
+}
+
+.sticky .logo{
+	display:none;
+}
+
+.sticky .logo-black{
+	display:block;
+}
+
+
+
+/*navigation bar end*/
+
+
+
+.carousel-item {
+      height: 100vh; 
+    }
+
+.carousel-image-1 {
+background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("c1.jpg");
+background-size: cover; 
+background-attachment: fixed;
+}
+
+.carousel-image-2 {
+background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("cover2.jpg");
+background-size: cover;
+background-attachment: fixed; }
+
+.carousel-image-3 {
+background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("mac.jpg");
+background-size: cover; 
+background-attachment: fixed;} 
+
+
+
+
+
+
+
+
+          /*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.carousel-fade {
+    position: relative;
+    height: 100vh;
+}
+.carousel-fade .carousel-inner .carousel-item {
+    height: 100vh;
+}
+
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-30%,0);
+         -moz-transform: translate3d(-50%,-30%,0);
+          -ms-transform: translate3d(-50%,-30%,0);
+           -o-transform: translate3d(-50%,-30%,0);
+              transform: translate3d(-50%,-30%,0);
+    	
+}
+.hero h1 {
+    font-size: 4em;    
+    
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.cline{
+	width: 33%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #1ABC9C;
+	/*line-height:3 !important;*/
+	margin-bottom:30px;
+    
+}
+
+	
+
+
+.hero h3{
+	letter-spacing: 1.5px;
+	
+}
+
+.carousel-fade .carousel-inner .carousel-item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.carousel-fade .carousel-inner .carousel-item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+/*.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}*/
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.carousel-fade .slides .slide-1, 
+.carousel-fade .slides .slide-2,
+.carousel-fade .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+
+
+
+
+/* Floating Social Media Bar Style Starts Here */
+
+
+
+
+.fl-fl {
+  background: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -140px;
+  z-index: 1000;
+  font: normal normal 20px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fp {
+  font-size: 20px ;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+  font-size: 10px !important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-gp {
+  top: 270px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+  
+  
+.contactus{
+     background-image: linear-gradient(105deg,
+        rgba(255, 255, 255,0.9),
+        rgba(255, 255, 255,0.9)),url('nat-10.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.float-sm{
+    display:none;
+}
+
+}
+
+@media (min-width:801px){
+    
+
+}
+
+/* Floating Social Media Bar Style Ends Here */
+
+.together {
+	
+	
+	argin:0px 20px;
+	
+ }
+ .aftertogether{
+ 	margin-top:150px !important;
+ 	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("together.jpg");
+background-size: cover;
+background-attachment: fixed;
+clip-path: polygon(5% 0%, 100% 0%, 95% 90%, 0% 90%);
+
+ }
+ .peraline{
+	width: 33%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #1ABC9C;
+	/*line-height:3 !important;*/
+	
+}
+.card{
+	border-bottom-right-radius: 15%; 
+	border-top-left-radius: 15%;
+}
+
+/* footer*/
+
+
+
+
+/* Footer start */
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+}
+.quick-links a{
+	cursor:auto;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+}
+
+
+
+
+/*footer end*/
+
+
+.card{
+	height:100%;
+}
+/*.quote{
+	
+	
+}
+
+.quote:before{
+	content:"\201c";
+	color:#1abc9c;
+	font-size:100px;
+	
+	
+	
+	
+}
+.quote:after{
+	content:"\201D";
+	color:#1abc9c;
+	font-size:100px;
+}
+.peraquote:before{
+	content:"\201c";
+	color:#1abc9c;
+	font-size:100px;
+}*/
+
+
+.quote {
+background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("quote.jpg");
+background-size: cover; 
+background-position:;
+background-attachment: fixed;
+clip-path: polygon(5% 0%, 100% 0%, 95% 70%, 0% 70%);
+
+
+}
+.fa-quote-left,
+.fa-quote-right
+{
+	color:#1abc9c;
+}
+
+
+@media (min-width:0px) and (max-width: 480px){
+	
+	.hero h1{
+		/*font-size:2.5em;*/
+		font-size:2.2em;
+		
+		
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	
+    .hgroup{
+    	
+    	width: 100vw;
+    	
+    }
+    
+    .hero h3{
+    	font-size:1.5em;
+    	
+    }
+
+    .aftertogether{
+ 	background:none;
+ 	color:#4F5356;
+ 	background-color:#F8F9FA;
+ 	clip-path:none;
+}
+.togetherheading{
+	color:#212529;
+}
+.pt-4{
+	color:#3B3F42;
+}
+.quote{
+	clip-path:none;
+	background:none;
+	background-color:#F8F9FA;
+	
+}
+.great{
+	color:#3B3F42;
+	/*background-color:red;*/
+	/*margin-left:-25vw !important;*/
+	position:relative;
+	left:-15%;
+	margin-bottom:-90px;
+
+}
+.logoonsmall {
+	display:block;
+	height:130px;
+	width:auto;
+	float:left;
+	
+	
+}
+.logo{
+	height:130px;
+	margin-left:-1vw;
+}
+
+.mobile-nav-icon{
+	display:inline-block;
+	margin-right:10px;
+	
+}
+#main-nav-a{
+	display:none;
+}
+#main-nav-b{
+	display:none;
+}
+#main-nav-c{
+	display:none;
+}
+.main-nav{
+	
+	float:left;
+	margin-top:40px;
+}
+
+.main-nav li{
+	position:relative;
+	display:block;
+	
+	margin-left:0px;
+	left:50%;
+}
+
+.lastli{
+	margin-right:0px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+	display:block;
+	border:0;
+	padding:5px 0;
+}
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:481px) and (max-width: 768px){
+	
+	.hero h1{
+		
+		font-size:2em;
+		
+		
+		padding-left:10vw;
+		padding-right:10vw;
+	}
+
+	
+    .hgroup{
+    	/*background-color: black;*/
+    	width: 100vw;
+    	
+    }
+    .hero{
+    	/*background-color: red;*/
+    }
+    .hero h3{
+    	font-size:1.2em;
+    	
+    }
+
+    .aftertogether{
+ 	background:none;
+ 	color:#4F5356;
+ 	background-color:#F8F9FA;
+ 	clip-path:none;
+}
+.togetherheading{
+	color:#212529;
+}
+.pt-4{
+	color:#3B3F42;
+}
+.quote{
+	clip-path:none;
+	background:none;
+	background-color:#F8F9FA;
+	
+}
+.great{
+	color:#3B3F42;
+	/*background-color:red;*/
+	/*margin-left:-20vw !important;*/
+	position:relative;
+	left:-15%;
+	margin-bottom:-90px;
+
+}
+.logoonsmall {
+	display:block;
+	height:130px;
+	width:auto;
+	float:left;
+	
+	
+}
+.logo{
+	height:130px;
+	margin-left:1vw;
+}
+
+
+.mobile-nav-icon{
+	display:inline-block;
+	margin-right:20px;
+	
+}
+#main-nav-a{
+	display:none;
+}
+#main-nav-b{
+	display:none;
+}
+#main-nav-c{
+	display:none;
+}
+.main-nav{
+
+	float:left;
+	margin-top:40px;
+	
+	
+	
+}
+
+.main-nav li{
+	position:relative;
+	display:block;
+	
+	margin-left:0px;
+	left:90%;
+	
+	
+}
+.lastli{
+	margin-right:0px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	display:block;
+	border:0;
+	padding:5px 0;
+}
+
+
+}
+
+
+
+@media (min-width:769px) and (max-width: 1024px){
+
+	.hero h1{
+		
+		font-size:3em;
+		
+		
+		
+	}
+	.hgroup{
+    	
+    	width: 100vw;
+    	
+    }
+    
+    .hero h3{
+    	font-size:1.4em;
+    	
+    }
+    .logo{
+	height:130px;
+	margin-left:0vw;
+	}
+	.lastli{
+	margin-right:40px;
+}
+	
+}
+@media (min-width:1024px) and (max-width: 1250px){
+
+	.hero h1{
+		
+		font-size:3em;
+		
+		
+		
+	}
+	.hero h3{
+		font-size:1.4em;
+		
+	}
+	.logo{
+	height:130px;
+	margin-left:0vw;
+	}
+}
+
+
+@media (min-width:575px) and (max-width: 700px){
+#email{
+	font-size:13px !important;
+	
+	
+}
+}

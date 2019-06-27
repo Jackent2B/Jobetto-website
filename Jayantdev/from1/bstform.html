@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobetto Services</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+      <link rel="stylesheet" href="style2.css">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+
+	
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="manifest" href="favicons/site.webmanifest">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="favicons/browserconfig.xml">
+<meta name="theme-color" content="black">
+
+<style>
+@media (min-width:0px) and (max-width: 575px){	
+
+	ul{
+		display:table; 
+		margin:0 auto;
+	}
+
+}
+
+</style>
+
+	<style type="text/css">
+		#home{
+	background: url(E:/rishav2/from1/bgimage1.jpg) no-repeat center center fixed;
+	display: table;
+	height: 900px;
+	position: relative;
+	width:100%;
+	background-size: cover;
+    object-fit: fill;
+    background-repeat: no-repeat;
+
+}
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+
+
+.header h4 {
+  position: relative;
+  top: 30px;
+  left: 10px;
+  color: white;
+}
+
+h1 {
+    font-family: "Bell MT";
+   /* color: white;*/
+    font-size: 75px;
+    
+    color: white;
+   
+}
+
+h4{
+    font-family: "Bell MT";
+   /* color: white;*/
+    font-size: 30px;
+    
+   
+}
+
+label{
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+}
+
+
+	</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+
+<div id="home">
+	<div class="landing-text">
+
+		<div class="header">
+			<img src="E:/rishav2/from1/logo-2.png" alt="logo" />
+			<b><h4>Your Thoughts Our Services</h4></b>
+			
+		</div>
+		
+		<div class="container" >
+		<br><br><br>
+		<b><h1 style="text-align: center;">Submit Your CV</h1></b>
+		<br><br>
+	<form action="connect.php" method="post">
+  <div class="form-row">
+    <div class="form-group col-md-6 mb-3">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required>
+    </div>
+
+    <!--  <div class="form-row">
+    <div class="form-group col-md-6 ">
+      <label for="validationServer01">Name</label>
+      <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div> -->
+    <div class="form-group col-md-6">
+      <label for="inputName">Name</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Name" name="name" required>
+      
+  </div>
+  <!-- <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div> -->
+  <!-- <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div> -->
+    <!-- <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div> -->
+
+  <!-- <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button> -->
+
+
+
+
+<!--   <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">First name</label>
+      <input type="text" class="form-control" id="validationServer01" placeholder="First name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div> -->
+   <!--  <div class="col-md-6 mb-3">
+      <label for="validationServer02">Last name</label>
+      <input type="text" class="form-control" id="validationServer02" placeholder="Last name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div> -->
+
+
+
+    <!-- <div class="col-md-4 mb-3">
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Applying For</label>
+    <select class="form-control " id="exampleFormControlSelect1" required>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+    </div> -->
+    <!-- EMAIL -->
+     <!--  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+    </div>
+  </div> -->
+  </div>
+  <div class="form-row">
+ <!--    <div class="col-md-6 mb-3">
+      <label for="validationServer03">City</label>
+      <select class="form-control is-valid" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    </div> -->
+    <div class="col-md-4 mb-4">
+      <label for="inputLocation">Current Work Location</label>
+      <select class="form-control" id="inputLocation" name="location" required>
+      <option value="0">Location*</option>
+                    <option value="593">Aba</option>
+                    <option value="1715">Aberdeen</option><option value="441">Abu Dhabi</option><option value="1806">Abuja</option><option value="912">Accra</option><option value="2042">Achalpur</option><option value="368">ad-Dammam</option><option value="900">Addis Ababa</option><option value="156">Adelaide</option><option value="554">Aden</option><option value="1611">Adilabad</option><option value="1552">Afghanistan-Other</option><option value="9">Agartala</option><option value="1421">Agoura Hills</option><option value="10">Agra</option><option value="1">Ahmedabad</option><option value="11">Ahmednagar</option><option value="1447">Aiken</option><option value="1785">Airoli</option><option value="12">Aizawal</option><option value="444">Ajman</option><option value="13">Ajmer</option><option value="1653">Akola</option><option value="544">Akron</option><option value="443">Al Ain</option><option value="1729">Al Jahra</option><option value="1380">Albany</option><option value="479">Alburquerque</option><option value="239">Alexandria</option><option value="1348">Algeria - Other</option><option value="1837">Algiers</option><option value="1172">Alibaug</option><option value="396">Alicante</option><option value="14">Aligarh</option><option value="1283">Aliso Viejo</option><option value="15">Allahabad</option><option value="1801">Allentown</option><option value="1596">Alleppey</option><option value="606">Almaty</option><option value="1707">Almere</option><option value="1794">Alpharetta</option><option value="1374">Alwar</option><option value="1841">Amarillo</option><option value="16">Ambala</option><option value="1185">Ambattur</option><option value="2043">Ambejogai</option><option value="1913">Ambikapur</option><option value="1693">Amloh</option><option value="295">Amman</option><option value="1145">Amravati</option><option value="1678">Amreli</option><option value="17">Amritsar</option><option value="321">Amsterdam</option><option value="1706">Amtala</option><option value="501">Anaheim</option><option value="18">Anand</option><option value="1165">Ananthpur</option><option value="511">Anchorage</option><option value="1302">Ang Thong</option><option value="872">Angola-Other</option><option value="1202">Angul</option><option value="1263">Anjar</option><option value="2044">Ankalkhop</option><option value="1107">Ankara</option><option value="19">Ankleshwar</option><option value="1407">Annapolis</option><option value="1171">Anpara</option><option value="233">Anshan</option><option value="978">Antananarivo</option><option value="168">Antwerp</option><option value="1409">Anuppur</option><option value="1052">Apia</option><option value="1314">Appleton</option><option value="1301">Arakkonam</option><option value="1770">Arambag</option><option value="1160">Argentina-Other</option><option value="1161">Argentina-Other</option><option value="494">Arlington</option><option value="1924">Armoor</option><option value="1931">Arrah</option><option value="1983">Arsikere</option><option value="331">As Sib</option><option value="297">as-Salimiyah</option><option value="20">Asansol</option><option value="1377">Ashburn</option><option value="1650">Ashby</option><option value="1424">Asheville</option><option value="1109">Ashgabat</option><option value="896">Asmara</option><option value="605">Astana</option><option value="1031">Asuncion</option><option value="369">at-Taif</option><option value="914">Athens</option><option value="478">Atlanta</option><option value="1915">Atyrau</option><option value="325">Auckland</option><option value="1305">Augusta</option><option value="21">Aurangabad</option><option value="503">Aurora</option><option value="460">Austin</option><option value="873">Australia-Other</option><option value="1344">Austria-Other,</option><option value="1470">Avon</option><option value="1885">Azerbaijan - Other</option><option value="350">Bacolod</option><option value="1174">Baddi</option><option value="1961">Badgam</option><option value="1765">Badharghat</option><option value="1838">Bagalkot</option><option value="938">Baghdad</option><option value="1946">Bagnan</option><option value="1589">Bago</option><option value="1705">Bahadurgarh</option><option value="345">Bahawalpur</option><option value="22">Bahgalpur</option><option value="1892">Bahraich</option><option value="874">Bahrain-Other</option><option value="1947">Baidyabati</option><option value="607">Baikonur</option><option value="504">Bakersfield</option><option value="1877">Baku</option><option value="1200">Balasore</option><option value="1831">Ballarat</option><option value="1891">Ballia</option><option value="466">Baltimore</option><option value="1994">Balusseri</option><option value="984">Bamako</option><option value="278">Bandung</option><option value="2">Bangalore</option><option value="1482">Bangka</option><option value="415">Bangkok</option><option value="875">Bangladesh-Other</option><option value="1097">Banjul</option><option value="1932">Banka</option><option value="1948">Bansberia</option><option value="1652">Banswara</option><option value="228">Baotou</option><option value="1284">Baramati</option><option value="1962">Baramulla</option><option value="1579">Barbil</option><option value="385">Barcelona</option><option value="1655">Bardoli</option><option value="23">Bareilly</option><option value="1635">Bargarh</option><option value="1197">Barh</option><option value="1345">Bario</option><option value="1214">Barito Timur</option><option value="1215">Barmer</option><option value="1880">Barnsley</option><option value="1941">Barpeta</option><option value="1949">Baruipur</option><option value="412">Basel</option><option value="1925">Bashir Bag</option><option value="1553">Basrah</option><option value="1046">Basseterre</option><option value="1893">Basti</option><option value="1970">Batala</option><option value="1365">Bath</option><option value="1902">Bathinda</option><option value="533">Baton Rouge</option><option value="1262">Battle</option><option value="1809">Bawal</option><option value="333">Bawshar</option><option value="1839">Baytown</option><option value="1859">Bazpur</option><option value="1971">Beas</option><option value="1602">Beawar</option><option value="1748">Begowal</option><option value="1835">Begusarai</option><option value="183">Beijing</option><option value="1742">Beira</option><option value="300">Beirut</option><option value="1728">Belfast</option><option value="1811">Belfort</option><option value="25">Belgaum</option><option value="876">Belgium-Other</option><option value="1061">Belgrade</option><option value="26">Bellary</option><option value="1443">Bellevue</option><option value="1499">Bellingham</option><option value="587">Benin City</option><option value="1619">Benton Harbor</option><option value="1529">Bergen</option><option value="1410">Berkshire</option><option value="255">Berlin</option><option value="413">Bern</option><option value="1387">Berwyn</option><option value="1450">Bethesda</option><option value="1873">Bethlehem</option><option value="1933">Bhabua</option><option value="1158">Bhadrachalam</option><option value="1860">Bhadrak</option><option value="573">Bhadreshwar</option><option value="1478">Bhagalpur</option><option value="1886">Bhagwanpur</option><option value="1972">Bharoli Kalan</option><option value="27">Bharuch</option><option value="1939">Bhatapara</option><option value="28">Bhatinda</option><option value="29">Bhavnagar</option><option value="1479">Bhilai</option><option value="568">Bhilwara</option><option value="1559">Bhimavaram</option><option value="1533">Bhind</option><option value="1147">Bhiwadi</option><option value="1226">Bhiwandi</option><option value="30">Bhiwani</option><option value="1211">Bhogat</option><option value="1173">Bhognipur</option><option value="1764">Bhograi</option><option value="1804">Bhongir</option><option value="31">Bhopal</option><option value="32">Bhubaneshwar</option><option value="1686">Bhucho Mandi</option><option value="33">Bhuj</option><option value="1834">Bhutan - Other</option><option value="34">Bidar</option><option value="272">Bielefeld</option><option value="1820">Bijapur</option><option value="1694">Bijnor</option><option value="1296">Bikaner</option><option value="35">Bilaspur</option><option value="393">Bilbao</option><option value="1199">Birlapur</option><option value="528">Birmingham</option><option value="427">Birmingham</option><option value="957">Bishkek</option><option value="1645">Bismarck</option><option value="922">Bissau</option><option value="1317">Bloomington</option><option value="270">Bochum</option><option value="1689">Bodeli</option><option value="545">Boise</option><option value="36">Bokaro</option><option value="1445">Bolingbrook</option><option value="1942">Bomdila</option><option value="1547">Bongaigaon</option><option value="273">Bonn</option><option value="252">Bordeaux</option><option value="465">Boston</option><option value="1563">Botswana-Other</option><option value="1426">Boulder</option><option value="431">Bradford</option><option value="1068">Bratislava</option><option value="1545">Braunschweig</option><option value="1458">Brazil - Other</option><option value="1826">Brazzaville</option><option value="1600">Breda</option><option value="264">Bremen</option><option value="1449">Bremerhaven</option><option value="2059">Bridgend</option><option value="1280">Bridgewater</option><option value="154">Brisbane</option><option value="435">Bristol</option><option value="1230">Broomfield</option><option value="1897">Brunei - Other</option><option value="169">Brussels</option><option value="1041">Bucharest</option><option value="931">Budapest</option><option value="1256">Buenos Aires</option><option value="515">Buffalo</option><option value="1321">Buffalo Grove</option><option value="1726">Bukhara</option><option value="558">Bulawayo</option><option value="1910">Bulgaria - Other</option><option value="1631">Bundi</option><option value="1950">Burdwan</option><option value="1541">Burghausen</option><option value="1570">Burhwal</option><option value="2062">Burkina Faso - Other</option><option value="1580">Burlingame</option><option value="1436">Burlington</option><option value="1201">Burma</option><option value="1326">Burnaby</option><option value="351">Cagayan</option><option value="238">Cairo</option><option value="177">Calgary</option><option value="37">Calicut</option><option value="1359">california city</option><option value="1289">Camberley</option><option value="1487">Cambodia-Other</option><option value="1366">Cambridge</option><option value="1564">Cameroon-Other</option><option value="1822">Campinas</option><option value="877">Canada-Other</option><option value="1719">Canada-Other,</option><option value="159">Canberra</option><option value="2019">Candolim</option><option value="1951">Canning</option><option value="2020">Cansualim</option><option value="1725">Canton</option><option value="371">Cape Town</option><option value="1128">Caracas</option><option value="437">Cardiff</option><option value="1513">Carol Stream</option><option value="1840">Carson</option><option value="1370">Cary</option><option value="1048">Castries</option><option value="349">Cebu</option><option value="1315">Centennial</option><option value="1485">Central Milton Keynes</option><option value="1306">Cerritos</option><option value="1642">Chaibasa</option><option value="1952">Chakdaha Bongaon</option><option value="1300">chalakudy</option><option value="2045">Chalisgaon</option><option value="1288">Chamba</option><option value="1437">Champaign</option><option value="1981">Chandaulli</option><option value="1196">Chanderia</option><option value="38">Chandigarh</option><option value="518">Chandler</option><option value="1224">Chandrapur</option><option value="214">Changchun</option><option value="211">Changsha</option><option value="1497">Chantilly</option><option value="172">Charleroi</option><option value="1311">Charleston</option><option value="463">Charlotte</option><option value="1805">Chattanooga</option><option value="1656">Cheeka</option><option value="361">Chelyabinsk</option><option value="195">Chengdu</option><option value="3">Chennai</option><option value="536">Chesapeake</option><option value="1745">Chester</option><option value="1396">Cheyenne</option><option value="572">Chhindwara</option><option value="2023">Chhota Udaipur</option><option value="419">Chiang Mai</option><option value="448">Chicago</option><option value="1984">Chikmadure</option><option value="1582">Chikmagalur</option><option value="1985">Chikodi</option><option value="878">China-Other</option><option value="1676">Chingleput</option><option value="1598">Chiplun</option><option value="996">Chisinau</option><option value="164">Chittagong</option><option value="1203">Chittorgarh</option><option value="187">Chongqing</option><option value="326">Christchurch</option><option value="535">Chula Vista</option><option value="1760">Churachanpur</option><option value="1597">Churu</option><option value="1832">Cilegon</option><option value="502">Cincinnati</option><option value="1480">Cirebon</option><option value="319">Ciudad juarez</option><option value="488">Cleveland</option><option value="1442">Clive</option><option value="1490">Clovis</option><option value="1625">Cocoa</option><option value="39">Coimbatore</option><option value="258">Cologne</option><option value="397">Colombo</option><option value="491">Colorado Springs</option><option value="1369">Columbia</option><option value="461">Columbus</option><option value="920">Conakry</option><option value="1462">Concord</option><option value="1825">Congo-Other</option><option value="879">Copenhagen</option><option value="1312">Coppell</option><option value="395">Cordoba</option><option value="1441">Cordova</option><option value="510">Corpus Christi</option><option value="1508">Corvallis</option><option value="1466">Costa Mesa</option><option value="1879">Costa Rica - Other</option><option value="1848">Cotonou</option><option value="439">Coventry</option><option value="1250">Covington</option><option value="1543">Crailsheim</option><option value="1606">Cuddalore</option><option value="1400">Cupertino</option><option value="40">Cuttack</option><option value="1849">Dadri</option><option value="1699">Dahanu</option><option value="571">Dahej</option><option value="1634">Dahod</option><option value="1059">Dakar</option><option value="41">Dalhousie</option><option value="202">Dalian</option><option value="454">Dallas</option><option value="1759">Dalli Rajhara</option><option value="42">Daman</option><option value="1088">Damascus</option><option value="1167">Dar es Salaam</option><option value="1094">Dar es Salaam; Dodoma (legislative)</option><option value="1270">Darbhanga</option><option value="1467">Darien</option><option value="1763">Darlipali</option><option value="1337">Dartmouth</option><option value="1710">Darwin</option><option value="226">Datong</option><option value="1680">Davangere</option><option value="348">Davao</option><option value="1431">Davenport</option><option value="1507">Dayton</option><option value="1415">Daytona</option><option value="1303">Dearborn</option><option value="1700">Deesa</option><option value="398">Dehiwala-Mount Lavinia</option><option value="43">Dehradun</option><option value="1884">Dehri</option><option value="4">Delhi</option><option value="880">Denmark-Other</option><option value="469">Denver</option><option value="1565">Depok</option><option value="1343">Derby</option><option value="1402">Des Moines</option><option value="456">Detroit</option><option value="1229">Dewas</option><option value="163">Dhaka</option><option value="2031">Dhamna</option><option value="1777">Dhamnod</option><option value="44">Dhanbad</option><option value="2032">Dhar</option><option value="45">Dharamshala</option><option value="1776">Dharmaj</option><option value="1177">Dharuhera</option><option value="46">Dharwad</option><option value="2024">Dhoraji</option><option value="1233">Dhule</option><option value="1973">Dhuri</option><option value="1943">Dibrugarh</option><option value="1753">Digboi</option><option value="887">Dili</option><option value="2055">Dimapur</option><option value="1854">Dindigul</option><option value="1768">Dinhata</option><option value="1757">Diphu</option><option value="47">Dispur</option><option value="881">Djibouti</option><option value="352">Doha</option><option value="1784">Dombivli</option><option value="883">Dominica-Other</option><option value="885">Dominican Republic-Other</option><option value="1953">Domjur</option><option value="189">Dongguan</option><option value="261">Dortmund</option><option value="1842">Douala</option><option value="269">Dresden</option><option value="1716">Duba</option><option value="440">Dubai</option><option value="284">Dublin</option><option value="267">Duisburg</option><option value="1658">Duliajan</option><option value="1386">Dulles</option><option value="1522">Duluth</option><option value="328">Dunedin</option><option value="2025">Dungar</option><option value="1511">Durango</option><option value="372">Durban</option><option value="48">Durgapur</option><option value="530">Durham</option><option value="1092">Dushanbe</option><option value="263">Dusseldorf</option><option value="888">East Timor-Other</option><option value="314">Ecatepec</option><option value="889">Ecuador-Other</option><option value="432">Edinburgh</option><option value="1149">Edison</option><option value="178">Edmonton</option><option value="1772">Egra</option><option value="891">Egypt-Other</option><option value="1828">Eindhoven</option><option value="467">El Paso</option><option value="892">El Salvador-Other</option><option value="1797">Elblag</option><option value="1926">Eluru</option><option value="1504">Englewood</option><option value="1872">Enschede</option><option value="894">Equatorial Guinea-Other</option><option value="897">Eritrea-Other</option><option value="49">Ernakulam</option><option value="50">Erode</option><option value="1868">Escholzmatt</option><option value="1265">Espinho</option><option value="1527">Espoo</option><option value="262">Essen</option><option value="898">Estonia-Other</option><option value="1830">Etah</option><option value="1546">Etalin</option><option value="901">Ethiopia-Other</option><option value="1155">Evanston</option><option value="1428">Evansville</option><option value="1382">Exton</option><option value="1323">Fairfax</option><option value="336">Faisalabad</option><option value="51">Faizabad</option><option value="1720">Farakka</option><option value="567">Faridabad</option><option value="1895">Faridkot</option><option value="1899">Farmington Hills</option><option value="1183">Farnborough</option><option value="1659">Fatehabad</option><option value="902">Fiji-Other</option><option value="904">Finland-Other</option><option value="1817">Firozabad</option><option value="1974">Firozpur</option><option value="1325">Florence</option><option value="1254">Florida</option><option value="1538">Fort Collins</option><option value="1491">Fort Irwin</option><option value="1587">Fort Lauderdale</option><option value="1517">Fort Nelson</option><option value="1537">Fort Smith</option><option value="517">Fort Wayne</option><option value="462">Fort Worth</option><option value="1815">Foster City</option><option value="906">France-Other</option><option value="259">Frankfurt</option><option value="1065">Freetown</option><option value="547">Fremont</option><option value="481">Fresno</option><option value="1615">Frisco</option><option value="1713">Fujairah</option><option value="292">Fukuoka</option><option value="230">Fushun</option><option value="209">Fuzhou</option><option value="907">Gabon-Other</option><option value="1135">Gaborone</option><option value="2026">Gadag</option><option value="1495">Gainesville</option><option value="582">Gajraula</option><option value="407">Galle</option><option value="1295">Gandhidham</option><option value="52">Gandhinagar</option><option value="1807">Ganganagar</option><option value="53">Gangtok</option><option value="537">Garland</option><option value="1368">Gaya</option><option value="411">Geneva</option><option value="924">Georgetown</option><option value="909">Georgia-Other</option><option value="911">Germany-Other</option><option value="913">Ghana-Other</option><option value="566">Ghaziabad</option><option value="171">Ghent</option><option value="541">Gilbert</option><option value="1578">Gilroy</option><option value="240">Giza</option><option value="429">Glasgow</option><option value="1350">Glastonbury</option><option value="521">Glendale</option><option value="1528">Glenview</option><option value="1862">Gloucester</option><option value="1846">Godda</option><option value="1532">Godhra</option><option value="1623">Golan</option><option value="157">Gold Coast - Tweed</option><option value="1638">Gondal</option><option value="1141">Gondavali</option><option value="55">Gorakhpur</option><option value="409">Gothenburg</option><option value="1783">Govandi</option><option value="1316">Grand chute</option><option value="1334">Grande Prairie</option><option value="1237">Graz</option><option value="565">Greater Noida</option><option value="915">Greece-Other</option><option value="1245">Green Bay</option><option value="519">Greensboro</option><option value="1308">Greenville</option><option value="1473">Greenwich</option><option value="1505">Greenwood Village</option><option value="916">Grenada-Other</option><option value="1556">Grenoble</option><option value="313">Guadalajara</option><option value="184">Guangzhou</option><option value="918">Guatemala City</option><option value="919">Guatemala-Other</option><option value="923">Guinea- Bissau-Other</option><option value="921">Guinea-Other</option><option value="208">Guiyang</option><option value="340">Gujranwala</option><option value="56">Gulbarga</option><option value="1516">Gulfport</option><option value="1605">Gummidipoondi</option><option value="1887">Guna</option><option value="1734">Guntakal</option><option value="57">Guntur</option><option value="1367">Gurdaspur</option><option value="563">Gurgaon</option><option value="58">Guwahati</option><option value="925">Guyana-Other</option><option value="59">Gwalior</option><option value="560">Gweru</option><option value="2056">Haflong</option><option value="926">Haiti-Other</option><option value="2063">Hajipur</option><option value="60">Haldia</option><option value="1362">Haldwani</option><option value="1640">Halol</option><option value="256">Hamburg</option><option value="181">Hamilton</option><option value="329">Hamilton</option><option value="229">Handan</option><option value="192">Hangzhou</option><option value="265">Hannover</option><option value="1130">Hanoi</option><option value="1666">Hansi</option><option value="1982">Hapur</option><option value="557">Harare</option><option value="194">Harbin</option><option value="1646">Hardoi</option><option value="1258">Haridwar</option><option value="1434">Harihar</option><option value="1347">Harrisburg</option><option value="1274">Harrogate</option><option value="1228">Hartford</option><option value="2010">Harur</option><option value="418">Hat Yai</option><option value="1475">Hatboro</option><option value="1923">Hazaribagh</option><option value="1273">Headington</option><option value="196">Hefei</option><option value="1420">Heidelberg</option><option value="1542">Heidenheim</option><option value="905">Helsinki</option><option value="516">Henderson</option><option value="1550">Herndon</option><option value="539">Hialeah</option><option value="1401">Hilchenbach</option><option value="1405">Hilden</option><option value="1774">Hilianch</option><option value="1509">Hillsboro</option><option value="1643">Himmatnagar</option><option value="1927">Hindupur</option><option value="1361">Hinjewadi</option><option value="1138">Hirakud</option><option value="294">Hiroshima</option><option value="61">Hisar</option><option value="1414">Ho Chi Minh</option><option value="1711">Hobart</option><option value="232">Hohhot</option><option value="928">Honduras-Other</option><option value="188">Hong Kong - China</option><option value="275">Hong Kong City</option><option value="930">Hong Kong-Other</option><option value="1072">Honiara</option><option value="495">Honolulu</option><option value="1621">Hornell</option><option value="1986">Hosekera</option><option value="1349">Hoshangabad</option><option value="1291">Hoshiarpur</option><option value="1413">Hospet</option><option value="62">Hosur</option><option value="1322">Houma</option><option value="449">Houston</option><option value="1773">Howrah</option><option value="63">Hubli</option><option value="556">Hudaydah</option><option value="1954">Hugli</option><option value="207">Huizhou</option><option value="932">Hungary-Other</option><option value="1304">Huntington Beach</option><option value="1583">Huntsville</option><option value="1430">Hurst</option><option value="5">Hyderabad</option><option value="585">Ibadan</option><option value="933">Iceland-Other</option><option value="2046">Ichalkaranji</option><option value="2047">Igatpuri</option><option value="591">Ilorin</option><option value="64">Imphal</option><option value="380">Incheon</option><option value="459">Indianapolis</option><option value="935">Indonesia-Other</option><option value="65">Indore</option><option value="1444">Iowa City</option><option value="306">Ipoh</option><option value="1863">Ipswich</option><option value="936">Iran-Other</option><option value="939">Iraq-Other</option><option value="296">Irbid</option><option value="940">Ireland-Other</option><option value="542">Irvine</option><option value="546">Irving</option><option value="1331">Iselin</option><option value="1730">Isfahan</option><option value="343">Islamabad</option><option value="941">Israel-Other</option><option value="1477">Istanbul</option><option value="944">Italy-Other</option><option value="66">Itanagar</option><option value="1737">Itarsi</option><option value="1355">Itasca</option><option value="1223">Ivory Coast - Other</option><option value="1727">Izmir</option><option value="67">Jabalpur</option><option value="1194">Jabli</option><option value="1318">Jackson</option><option value="458">Jacksonville</option><option value="1603">Jadcherla</option><option value="406">Jaffna</option><option value="1914">Jagdalpur</option><option value="1975">Jagraon</option><option value="1909">Jaigarh</option><option value="68">Jaipur</option><option value="69">Jaisalmer</option><option value="1824">Jajpur</option><option value="277">Jakarta</option><option value="1208">Jakhal</option><option value="70">Jalandhar</option><option value="71">Jalgaon</option><option value="298">Jalib as-Suyuh</option><option value="947">Jamaica-Other</option><option value="1739">Jamalpur</option><option value="1406">Jambi City</option><option value="72">Jammu</option><option value="73">Jamnagar</option><option value="74">Jamshedpur</option><option value="1955">Jamuria</option><option value="949">Japan-Other</option><option value="1781">Jath</option><option value="1358">Jeddah</option><option value="1724">Jena</option><option value="1481">Jepara</option><option value="523">Jersey City</option><option value="942">Jerusalem</option><option value="2050">Jetpur</option><option value="1630">Jeypore</option><option value="1379">Jhagadia</option><option value="1239">Jhansi</option><option value="1204">Jharsugda</option><option value="365">Jiddah</option><option value="218">Jilin City</option><option value="198">Jinan</option><option value="1976">Jind</option><option value="2065">JINJA</option><option value="1641">Joda</option><option value="75">Jodhpur</option><option value="373">Johannesburg</option><option value="305">Johor Bahru</option><option value="950">Jordan-Other</option><option value="1681">Jorhat</option><option value="592">Jos</option><option value="1857">Juba</option><option value="1285">Jubail</option><option value="1191">Junagarh</option><option value="1626">Jupiter</option><option value="1581">Kadapa</option><option value="1660">Kadi</option><option value="561">Kadoma</option><option value="586">Kaduna</option><option value="1766">Kailasahar</option><option value="1956">Kakdwip</option><option value="76">Kakinada</option><option value="2011">Kallakkuruchi</option><option value="404">Kalmunai</option><option value="1266">Kalol</option><option value="1152">Kamalapuram</option><option value="1114">Kampala</option><option value="1782">Kamptee</option><option value="1874">Kanchipuram</option><option value="1193">Kandahar</option><option value="1530">Kandhar</option><option value="77">Kandla</option><option value="1787">Kandukur</option><option value="403">Kandy</option><option value="1901">Kangra</option><option value="78">Kannur</option><option value="584">Kano</option><option value="79">Kanpur</option><option value="480">Kansas City</option><option value="1819">Kanyakumari</option><option value="1775">Kapadvanj</option><option value="1845">Kapolei</option><option value="1657">Kapurthala</option><option value="334">Karachi</option><option value="1778">Karad</option><option value="1963">Kargil</option><option value="1987">Karikere</option><option value="1637">Karimnagar</option><option value="1957">Karimpur</option><option value="80">Karnal</option><option value="1281">Karur</option><option value="1595">Kasauli</option><option value="1526">Kashipur</option><option value="1593">Kathiawad</option><option value="320">Kathmandu</option><option value="1934">Katihar</option><option value="1911">Katni</option><option value="1746">Katra</option><option value="81">Kavaratti</option><option value="574">Kawai</option><option value="293">Kawasaki</option><option value="608">Kazakhstan</option><option value="358">Kazan</option><option value="1327">Kelowna</option><option value="1255">Kentuky</option><option value="951">Kenya-Other</option><option value="1896">Keonjhar</option><option value="1661">Khanpur</option><option value="82">Kharagpur</option><option value="1080">Khartoum</option><option value="1875">Khatima</option><option value="1762">Khliehriat</option><option value="1562">Khobar</option><option value="423">Khon Kaen</option><option value="1813">Khopoli</option><option value="165">Khulna</option><option value="1476">Khurda</option><option value="1440">Khurja</option><option value="1044">Kigali</option><option value="1294">King of Prussia</option><option value="948">Kingston</option><option value="1050">Kingstown</option><option value="952">Kiribati-Other</option><option value="1758">Kishanganj</option><option value="1391">Kishangarh</option><option value="1995">Kizhoor</option><option value="1332">Knoxville</option><option value="291">Kobe</option><option value="83">Kochi</option><option value="1996">Kodivayoor</option><option value="84">Kohima</option><option value="85">Kolar</option><option value="86">Kolhapur</option><option value="6">Kolkata</option><option value="87">Kollam</option><option value="1662">Konnagar</option><option value="1493">Korba</option><option value="1800">Kosi</option><option value="954">Kosovo-Other</option><option value="88">Kota</option><option value="1997">Kottarakkara</option><option value="89">Kottayam</option><option value="402">Kotte</option><option value="276">Kowloon</option><option value="1246">kozhikode</option><option value="1500">Krakow</option><option value="304">Kuala Lumpur</option><option value="308">Kuala Terengganu</option><option value="307">Kuching</option><option value="90">Kullu Manali</option><option value="1779">Kumbhoj</option><option value="1998">Kumily</option><option value="1988">Kumta</option><option value="1163">kundanganj</option><option value="1297">Kundli</option><option value="205">Kunming</option><option value="1180">Kurkumbh</option><option value="91">Kurnool</option><option value="92">Kurukshetra</option><option value="1890">Kutch</option><option value="1218">Kutehr</option><option value="299">Kuwait City</option><option value="956">Kuwait-Other</option><option value="382">Kwangju</option><option value="1117">Kyiv</option><option value="290">Kyoto</option><option value="958">Kyrgyzstan-Other</option><option value="1818">La Rochelle</option><option value="583">lagos</option><option value="1143">Lagos</option><option value="1935">Laheriasarai</option><option value="335">Lahore</option><option value="1617">Lake Mary</option><option value="1310">Lakeland</option><option value="1903">Lakhimpur</option><option value="2066">Lakshadweep</option><option value="1944">Lamphelpat</option><option value="1492">Lancaster</option><option value="216">Lanzhou</option><option value="959">Laos-Other</option><option value="531">Laredo</option><option value="391">Las Palmas</option><option value="473">Las Vegas</option><option value="1225">Latur</option><option value="961">Latvia-Other</option><option value="414">Lausanne</option><option value="1502">Lauterbourg</option><option value="1741">Lavasa</option><option value="1395">Lawrenceville</option><option value="1136">Laxmipur</option><option value="963">Lebanon-Other</option><option value="428">Leeds</option><option value="1747">Leh</option><option value="1498">Lehi</option><option value="266">Leipzig</option><option value="1319">Lenexa</option><option value="1599">Leonberg</option><option value="964">Lesotho-Other</option><option value="1501">Leuven</option><option value="508">Lexington</option><option value="966">Liberia-Other</option><option value="908">Libreville</option><option value="968">Libya-Other</option><option value="970">Liechtenstein-Other</option><option value="170">Liege</option><option value="234">Lijiang</option><option value="253">Lille</option><option value="980">Lilongwe</option><option value="1033">Lima</option><option value="520">Lincoln</option><option value="1474">Lincolnshire</option><option value="1236">Linz</option><option value="1038">Lisbon</option><option value="972">Lithuania-Other</option><option value="1264">Little Rock</option><option value="433">Liverpool</option><option value="1150">Livonia</option><option value="1070">Ljubljana</option><option value="1338">Lloydminster</option><option value="1936">Lohardaga</option><option value="1099">Lome</option><option value="426">London</option><option value="483">Long Beach</option><option value="447">Los Angeles</option><option value="474">Louisville</option><option value="603">Luanda</option><option value="532">Lubbock</option><option value="1560">Lubumbashi</option><option value="93">Lucknow</option><option value="94">Ludhiana</option><option value="223">Luoyang</option><option value="604">Lusaka</option><option value="974">Luxembourg</option><option value="975">Luxembourg-Other</option><option value="1451">Lynchburg</option><option value="1644">Lynn</option><option value="245">Lyon</option><option value="1566">Lytham</option><option value="590">lZaria</option><option value="976">Macedonia-Other</option><option value="1438">Macon</option><option value="979">Madagascar-Other</option><option value="1937">Madhepura</option><option value="526">Madison</option><option value="384">Madrid</option><option value="95">Madurai</option><option value="1912">Mahasamund</option><option value="1907">Mahbubnagar</option><option value="1679">Mahendragarh</option><option value="2027">Mahesana</option><option value="2033">Mahodiya</option><option value="589">Maiduguri</option><option value="1140">Maihar</option><option value="1544">Mainhausen</option><option value="1320">Maitland</option><option value="988">Majuro</option><option value="895">Malabo</option><option value="389">Malaga</option><option value="1798">Malappuram</option><option value="1187">Malawi</option><option value="981">Malawi-Other</option><option value="982">Malaysia-Other</option><option value="1769">Malbazaranch</option><option value="983">Maldives-Other</option><option value="309">Male</option><option value="985">Mali-Other</option><option value="986">Malta-Other</option><option value="1353">Malvern</option><option value="1016">Managua</option><option value="160">Manama</option><option value="2000">Mananthavady</option><option value="434">Manchester</option><option value="1383">Manchester</option><option value="1371">Mandalay</option><option value="1446">Mandaluyong</option><option value="1744">Mandi</option><option value="1271">Mandsaur</option><option value="1394">Manesar</option><option value="96">Mangalore</option><option value="347">Manila</option><option value="1577">Manipal</option><option value="274">Mannheim</option><option value="1419">Mansfield</option><option value="2022">Mapusa</option><option value="597">Maputo</option><option value="2021">Margao</option><option value="1381">Marion</option><option value="1604">Markham</option><option value="246">Marseille</option><option value="989">Marshall Islands-Other</option><option value="965">Maseru</option><option value="1551">Matawan</option><option value="97">Mathura</option><option value="2001">Mattannur</option><option value="990">Mauritania-Other</option><option value="992">Mauritius-Other</option><option value="1084">Mbabane</option><option value="1455">McClean Lake</option><option value="1376">McLean</option><option value="366">Mecca</option><option value="280">Medan</option><option value="367">Medinah</option><option value="98">Meerut</option><option value="1257">Mehsana</option><option value="153">Melbourne</option><option value="1025">Melekeok</option><option value="2034">Melkheda</option><option value="1864">Melsungen</option><option value="464">Memphis</option><option value="1515">Mendota Heights</option><option value="1454">Meriden</option><option value="484">Mesa</option><option value="1356">Metaire</option><option value="1342">Metairie</option><option value="312">Mexico City</option><option value="993">Mexico-Other</option><option value="487">Miami</option><option value="1222">Michigan</option><option value="994">Micronesia- Federated States of-Other</option><option value="1388">Middletown</option><option value="945">Milan</option><option value="1352">Milford</option><option value="1307">Mililani</option><option value="1922">Milpitas</option><option value="471">Milwaukee</option><option value="493">Minneapolis</option><option value="1601">Mirabel</option><option value="1989">Mirjan</option><option value="1708">Miryalguda</option><option value="1398">Mississauga</option><option value="1354">Mississauga</option><option value="1701">Modasa</option><option value="550">Modesto</option><option value="1894">Moga</option><option value="1074">Mogadishu</option><option value="99">Mohali</option><option value="1977">Mojowal</option><option value="1240">Mokochung</option><option value="1790">Mokokchung</option><option value="997">Moldova-Other</option><option value="1190">Mombasa</option><option value="998">Monaco</option><option value="999">Monaco-Other</option><option value="1439">Moncton</option><option value="1000">Mongolia-Other</option><option value="967">Monrovia</option><option value="1002">Montenegro-Other</option><option value="317">Monterrey</option><option value="1119">Montevideo</option><option value="551">Montgomery</option><option value="251">Montpellier</option><option value="174">Montreal</option><option value="100">Moradabad</option><option value="399">Moratuwa</option><option value="1267">Morbi</option><option value="1282">Morgantown</option><option value="1574">Morinda</option><option value="1004">Morocco-Other</option><option value="1378">Morristown</option><option value="353">Moscow</option><option value="1928">Moti Nagar</option><option value="1269">Motihari</option><option value="1340">Mount Pleasant</option><option value="1360">Mountain View</option><option value="1006">Mozambique-Other</option><option value="1592">Mudhol</option><option value="161">Muharraq</option><option value="1668">Mullanpur Dakha</option><option value="338">Multan</option><option value="7">Mumbai</option><option value="569">Mundra</option><option value="257">Munich</option><option value="390">Murcia</option><option value="330">Muscat</option><option value="559">Mutare</option><option value="1613">Muzaffarnagar</option><option value="1904">Muzaffarpur</option><option value="1007">Myanmar-Other</option><option value="101">Mysore</option><option value="1670">Nadiad</option><option value="1990">Naganur</option><option value="1671">Nagaur</option><option value="1432">Nagda</option><option value="102">Nagercoil</option><option value="288">Nagoya</option><option value="103">Nagpur</option><option value="1945">Naharlagun</option><option value="1672">Naila Janjgir</option><option value="598">Nairobi</option><option value="420">Nakhon Ratchasima</option><option value="424">Nakhon Si Thammarat</option><option value="1754">Nalbari</option><option value="1803">Nalgonda</option><option value="2064">Namakkal</option><option value="1009">Namibia-Other</option><option value="201">Nanchang</option><option value="1906">Nanded</option><option value="1232">Nandurbar</option><option value="1929">Nandyal</option><option value="190">Nanjing</option><option value="227">Nanning</option><option value="249">Nantes</option><option value="224">Nantong</option><option value="1647">Naperville</option><option value="1978">Narnaul</option><option value="104">Nashik</option><option value="470">Nashville</option><option value="1697">Nathdwara</option><option value="1011">Nauru-Other</option><option value="2028">Navalgadh</option><option value="581">Navi Mumbai</option><option value="1698">Navsari</option><option value="1836">Nawanshahr</option><option value="1590">Naypyidaw</option><option value="1755">Nazira</option><option value="1795">Nederland</option><option value="2002">Nedumangad</option><option value="1853">Needham</option><option value="1137">Neemrana</option><option value="1252">Neenah</option><option value="400">Negombo</option><option value="1991">Nelhal</option><option value="105">Nellore</option><option value="1013">Nepal-Other</option><option value="1786">Nerul</option><option value="1014">Netherlands-Other</option><option value="1469">New Britain</option><option value="1855">New Castle</option><option value="1261">New Hope</option><option value="1148">New Jersey</option><option value="498">New Orleans</option><option value="446">New York City</option><option value="1015">New Zealand-Other</option><option value="1665">Newai</option><option value="513">Newark</option><option value="158">Newcastle</option><option value="1735">Newcastle upon Tyne</option><option value="1465">Newport Beach</option><option value="315">Nezahualcoyotl</option><option value="1018">Niamey</option><option value="1017">Nicaragua-Other</option><option value="248">Nice</option><option value="1019">Niger-Other</option><option value="594">Nigeria</option><option value="1020">Nigeria-Other</option><option value="215">Ningbo</option><option value="106">Nizamabad</option><option value="357">Nizhny Novgorod</option><option value="564">Noida</option><option value="416">Nonthaburi</option><option value="1808">Norcross</option><option value="527">Norfolk</option><option value="1247">North Carolina</option><option value="1461">North Hollywood</option><option value="534">North Las Vegas</option><option value="1468">Norwalk</option><option value="1021">Norway-Other</option><option value="1411">Nottingham</option><option value="991">Nouakchott</option><option value="355">Novosibirsk</option><option value="1101">Nukualofa</option><option value="268">Nuremburg</option><option value="1330">Oak Brook</option><option value="1452">Oak Ridge</option><option value="489">Oakland</option><option value="2012">Oddanchatram</option><option value="1162">Ohio</option><option value="476">Oklahama City</option><option value="1293">Old Lyme</option><option value="1251">Oldsmar</option><option value="1448">Olkiluoto</option><option value="485">Omaha</option><option value="1023">Oman</option><option value="360">Omsk</option><option value="1390">Ontario</option><option value="107">Ooty</option><option value="2013">Oragadam</option><option value="1889">Orai</option><option value="1392">orange county</option><option value="525">Orlando</option><option value="287">Osaka</option><option value="1022">Oslo</option><option value="1423">Oswego</option><option value="562">Other</option><option value="1178">Other Chile</option><option value="151">Other India</option><option value="2003">Ottappalam</option><option value="1456">Ottawa</option><option value="176">Ottawa-Gatineau</option><option value="1309">Owings Mills</option><option value="1364">Oxford</option><option value="1275">Oxfordshire</option><option value="417">Pak Kret</option><option value="1024">Pakistan-Other</option><option value="1788">Palacole</option><option value="108">Palakkad</option><option value="1888">Palampur</option><option value="1639">Palanpur</option><option value="1026">Palau-Other</option><option value="281">Palembang</option><option value="2004">Palghat</option><option value="1632">Pali</option><option value="995">Palikir</option><option value="392">Palma</option><option value="1682">Palsana</option><option value="1669">Palwal</option><option value="1964">Pampore</option><option value="54">Panaji</option><option value="1027">Panama City</option><option value="1028">Panama-Other</option><option value="1608">Panchkula</option><option value="109">Panipat</option><option value="2035">Panna</option><option value="1393">Panoli</option><option value="1272">Pantnagar</option><option value="1575">Paonta Sahib</option><option value="1029">Papua New Guinea-Other</option><option value="110">Paradeep</option><option value="1032">Paraguay-Other</option><option value="1082">Paramaribo</option><option value="2048">Paranda</option><option value="2005">Parassala</option><option value="1573">Parbhani</option><option value="244">Paris</option><option value="1253">Parsippany</option><option value="1829">Parwanoo</option><option value="1179">Patalganga</option><option value="1189">Patan</option><option value="2006">Pathanapuram</option><option value="111">Pathankot</option><option value="112">Patiala</option><option value="113">Patna</option><option value="425">Pattaya</option><option value="1930">Peddapuram</option><option value="1427">Pensacola</option><option value="155">Perth</option><option value="1034">Peru-Other</option><option value="2014">Perundurai</option><option value="341">Peshawar</option><option value="1663">Phagwara</option><option value="2049">Phaltan</option><option value="451">Philadelphia</option><option value="1035">Philippines-Other</option><option value="1488">Phnom Penh</option><option value="450">Phoenix</option><option value="1940">Phulbani</option><option value="1675">Pichandarkovil</option><option value="2038">Pipariya</option><option value="1667">Piplia Mandi</option><option value="1298">Pithampur</option><option value="506">Pittsburgh</option><option value="514">Plano</option><option value="1793">Pleasanton</option><option value="1003">Podgorica</option><option value="1792">Pokhran</option><option value="1036">Poland-Other</option><option value="2015">Pollachi</option><option value="114">Pondicherry</option><option value="1584">Pooler</option><option value="115">Porbandar</option><option value="116">Port Blair</option><option value="376">Port Elizabeth</option><option value="588">Port Harcourt</option><option value="310">Port Louis</option><option value="1030">Port Moresby</option><option value="242">Port Said</option><option value="927">Port-au-Prince</option><option value="1103">Port-of-Spain</option><option value="1124">Port-Vista</option><option value="475">Portland</option><option value="1039">Portugal-Other</option><option value="1188">Prague</option><option value="1750">Pratapgarh</option><option value="1736">Preston</option><option value="374">Pretoria</option><option value="1339">Prince George</option><option value="1279">Princeton</option><option value="955">Pristina</option><option value="1740">Proddatur</option><option value="1489">Prudhoe Bay</option><option value="316">Puebla</option><option value="1965">Pulwama</option><option value="8">Pune</option><option value="117">Puri</option><option value="1268">Purnia</option><option value="378">Pusan</option><option value="1503">Pyeongtaek</option><option value="1040">Qatar</option><option value="199">Qingdao</option><option value="225">Qiqihar</option><option value="179">Quebec City</option><option value="342">Quetta</option><option value="118">Quilon</option><option value="1429">Quincy</option><option value="890">Quito</option><option value="1005">Rabat</option><option value="1869">Radeburg</option><option value="1198">Raibareilly</option><option value="1821">Raichur</option><option value="1157">Raigad</option><option value="1549">Raigarh</option><option value="1958">Raigunj</option><option value="119">Raipur</option><option value="120">Rajahmundry</option><option value="1791">Rajapur</option><option value="1610">Rajganpur</option><option value="595">Rajkot</option><option value="1690">Rajmahal</option><option value="1182">Rajnandgaon</option><option value="2036">Rajoda</option><option value="1966">Rajouri</option><option value="121">Rajpur</option><option value="1959">Rajpur Sonarpur</option><option value="2037">Rajpura</option><option value="1685">Rajsamand</option><option value="166">Rajshahi</option><option value="490">Raleigh</option><option value="1751">Ramganj</option><option value="2029">Ramnagar</option><option value="1346">Rampur</option><option value="122">Ranchi</option><option value="1588">Rancho Cordova</option><option value="1008">Rangoon</option><option value="1992">Rannibennur</option><option value="445">Ras al Khaymah</option><option value="1357">Ratlam</option><option value="1216">Ratnagiri</option><option value="337">Rawalpindi</option><option value="1905">Rawatbhata</option><option value="1709">Rayagada</option><option value="1567">Reading</option><option value="1967">Reasi</option><option value="1539">Redmond</option><option value="1335">Regina</option><option value="254">Rennes</option><option value="538">Reno</option><option value="1614">Rensselaer</option><option value="1512">Renton</option><option value="1221">Renukoot</option><option value="2054">Rewa</option><option value="1535">Rewari</option><option value="934">Reykjavik</option><option value="1209">Rhode Island</option><option value="1435">Richfield</option><option value="548">Richmond</option><option value="162">Riffa</option><option value="962">Riga</option><option value="1260">Rio De Janeiro</option><option value="1684">Rishabhdeo</option><option value="1752">Rishikesh</option><option value="507">Riverside</option><option value="1328">Riverview</option><option value="364">Riyadh</option><option value="1333">Roanoke</option><option value="1324">Rochelle Park</option><option value="543">Rochester</option><option value="1278">Rockville</option><option value="1814">Roha</option><option value="123">Rohtak</option><option value="1555">Roing</option><option value="1042">Romania-Other</option><option value="946">Rome</option><option value="124">Roorkee</option><option value="1568">Rosa</option><option value="884">Roseau</option><option value="362">Rostov-on-Don</option><option value="1843">Roswell</option><option value="322">Rotterdam</option><option value="125">Rourkela</option><option value="1867">Rubi</option><option value="1636">Rudraprayag</option><option value="1159">Rudrapur</option><option value="1651">Rugby</option><option value="1771">Rupnarayanpur</option><option value="1043">Russia-Other</option><option value="1045">Rwanda-Other</option><option value="1688">Sachin</option><option value="482">Sacramento</option><option value="1207">Sagauli</option><option value="1749">Sagwara</option><option value="1816">Saharanpur</option><option value="1206">Saharsa</option><option value="917">Saint Georges</option><option value="1047">Saint Kitts and Nevis-Other</option><option value="1049">Saint Lucia-Other</option><option value="354">Saint Petersburg</option><option value="1051">Saint Vincent and the Grenadines-Other</option><option value="332">Salalah</option><option value="1219">Salboni</option><option value="126">Salem</option><option value="1227">Salt Lake City</option><option value="1238">Salzburg</option><option value="359">Samara</option><option value="1664">Samastipur</option><option value="1968">Samba</option><option value="1276">Sambalpur</option><option value="1053">Samoa-Other</option><option value="452">San Antonio</option><option value="1918">San Bernardino</option><option value="453">San Diego</option><option value="457">San Francisco</option><option value="455">San Jose</option><option value="1796">San Marcos</option><option value="1054">San Marino</option><option value="1055">San Marino-Other</option><option value="1586">San Mateo</option><option value="1858">San Pedro Sula</option><option value="1341">San Ramon</option><option value="893">San Salvador</option><option value="553">Sanaa</option><option value="1373">Sanand</option><option value="1799">Sanchore</option><option value="1851">Sangli</option><option value="1673">Sangrur</option><option value="1674">Sankagiri</option><option value="500">Santa Ana</option><option value="1168">Santa Clara</option><option value="1917">Santa Clarita</option><option value="1464">Santa Cruz</option><option value="1412">Santa Fe</option><option value="1916">Santa Monica</option><option value="886">Santo Domingo</option><option value="1248">Sao Paulo</option><option value="1056">Sao Tome</option><option value="1057">Sao Tome and Principe-Other</option><option value="289">Sapporo</option><option value="1702">Saputara</option><option value="344">Sarghodha</option><option value="1336">Saskatoon</option><option value="1176">Satara</option><option value="1622">Satharia</option><option value="1195">Satna</option><option value="1058">Saudi Arabia-Other</option><option value="1496">Savli</option><option value="302">Sayda</option><option value="1244">Schaumburg</option><option value="1607">Scotland-Other</option><option value="524">Scottsdale</option><option value="468">Seattle</option><option value="1144">Secunderabad</option><option value="283">Semarang</option><option value="1060">Senegal-Other</option><option value="383">Seongnam</option><option value="377">Seoul</option><option value="1062">Serbia-Other</option><option value="387">Sevilla</option><option value="1484">Sevres</option><option value="1153">Sewa</option><option value="1063">Seychelles-Other</option><option value="1847">Shah Alam</option><option value="1548">Shahabad</option><option value="1908">Shahdol</option><option value="1921">Shahpura</option><option value="1612">Shaktinagar</option><option value="2039">Shamgarh</option><option value="182">Shanghai</option><option value="204">Shantou</option><option value="442">Sharjah</option><option value="1572">Shatin</option><option value="430">Sheffield</option><option value="193">Shenyang</option><option value="185">Shenzhen</option><option value="2040">Sheopur</option><option value="1518">Sherwood Park</option><option value="210">Shijiazhuang</option><option value="127">Shillong</option><option value="128">Shimla</option><option value="1483">Shimoga</option><option value="1993">Shirahatti</option><option value="1703">Shirdi</option><option value="2061">Shirpur</option><option value="129">Sholapur</option><option value="1999">Shornur</option><option value="1329">Shreveport</option><option value="1882">Shrirampur</option><option value="1695">Shujalpur</option><option value="1717">Shuqra</option><option value="346">Sialkot</option><option value="1756">Sibsagar</option><option value="1881">Sidhi</option><option value="1683">Sidhpur</option><option value="1066">Sierra Leone-Other</option><option value="1878">Sihora</option><option value="1920">Sikandrabad</option><option value="1633">Sikar</option><option value="130">Silchar</option><option value="131">Siliguri</option><option value="132">Silvassa</option><option value="1514">Silver Spring</option><option value="1938">Sindri</option><option value="370">Singapore City</option><option value="1067">Singapore-Other</option><option value="1738">Singrauli</option><option value="1231">Sinnar</option><option value="1525">Sirsa</option><option value="1569">Sitapur</option><option value="1856">Sitarganj</option><option value="1629">Siwan</option><option value="977">Skopje</option><option value="1457">Slough</option><option value="1069">Slovakia-Other</option><option value="1071">Slovenia-Other</option><option value="1561">Solapur</option><option value="1073">Solomon Islands-Other</option><option value="1075">Somalia-Other</option><option value="1609">Sonebhadra</option><option value="1287">Sonipat</option><option value="1969">Sopore</option><option value="1076">South Africa-Other</option><option value="1823">South Gate</option><option value="1077">South Korea-Other</option><option value="375">Soweto</option><option value="1696">Soyagaon</option><option value="1078">Spain-Other</option><option value="1510">Spartanburg</option><option value="1519">Sparwood</option><option value="549">Spokane</option><option value="1408">Springfield</option><option value="2060">Sri City</option><option value="1876">Sri Ganganagar</option><option value="1079">Sri Lanka-Other</option><option value="133">Srinagar</option><option value="1184">Sriperumbudur</option><option value="1861">St Albans</option><option value="1718">St. John</option><option value="497">St. Louis</option><option value="512">St. Paul</option><option value="522">St. Petersburg</option><option value="1235">St. Polten</option><option value="1649">Stafford</option><option value="1472">Stamford</option><option value="1850">Staunton</option><option value="408">Stockholm</option><option value="509">Stockton</option><option value="1453">Stockton-on-Tees</option><option value="1802">Stow</option><option value="250">Strasbourg</option><option value="260">Stuttgart</option><option value="1554">Subansiri</option><option value="241">Subra al-Haymah</option><option value="1081">Sudan-Other</option><option value="243">Suez</option><option value="1691">Sundergarh</option><option value="1175">Supa</option><option value="303">Sur</option><option value="279">Surabaya</option><option value="1870">Surajgarh</option><option value="134">Surat</option><option value="422">Surat Thani</option><option value="1299">Surendranagar</option><option value="1083">Suriname-Other</option><option value="1169">Sutrapada</option><option value="903">Suva</option><option value="213">Suzhou</option><option value="1085">Swaziland-Other</option><option value="1086">Sweden-Other</option><option value="1416">Swindon</option><option value="1087">Switzerland-Other</option><option value="152">Sydney</option><option value="167">Sylhet</option><option value="1089">Syria-Other</option><option value="1731">Tabriz</option><option value="1591">Tabuk</option><option value="1494">Tada</option><option value="1164">Tadipatri</option><option value="379">Taegu</option><option value="381">Taejeon</option><option value="1090">Taipei</option><option value="1091">Taiwan-Other</option><option value="203">Taiyuan</option><option value="555">Taizz</option><option value="1093">Tajikistan-Other</option><option value="2057">Talcher</option><option value="1677">Tallapoosa</option><option value="899">Tallinn</option><option value="1151">Taloja</option><option value="1213">Tamiang Layang</option><option value="1290">Tamnar</option><option value="499">Tampa</option><option value="1743">Tampere</option><option value="222">Tangshan</option><option value="1557">Tanuku</option><option value="1095">Tanzania-Other</option><option value="1571">Tarapur</option><option value="953">Tarawa Atoll</option><option value="1220">Tarkeshwar</option><option value="1780">Tasgaon</option><option value="1122">Tashkent</option><option value="1523">Tawang</option><option value="910">Tbilisi</option><option value="929">Tegucigalpa</option><option value="937">Tehran</option><option value="943">Tel Aviv</option><option value="1259">Tel Hai</option><option value="1767">Teliamuraanch</option><option value="1399">Tempe</option><option value="1486">Tete</option><option value="1146">Tete-Other</option><option value="1852">Texas</option><option value="1883">Tezpur</option><option value="1205">Teztur</option><option value="1096">Thailand-Other</option><option value="1524">Thane</option><option value="2030">Thangad</option><option value="135">Thanjavur</option><option value="1098">The Gambia-Other</option><option value="323">The Hague</option><option value="1833">Thimphu</option><option value="1979">Thoba Dhani</option><option value="136">Thrissur</option><option value="186">Tianjin</option><option value="318">Tijuana</option><option value="570">Tirora</option><option value="138">Tirunelveli</option><option value="139">Tirupati</option><option value="1648">Tirupur</option><option value="1704">Tiruvannamalai</option><option value="1100">Togo-Other</option><option value="285">Tokyo</option><option value="505">Toledo</option><option value="1102">Tonga-Other</option><option value="1210">Topeka</option><option value="173">Toronto</option><option value="1463">Torrance</option><option value="247">Toulouse</option><option value="140">Trichy</option><option value="401">Trincomalee</option><option value="1104">Trinidad and Tobago-Other</option><option value="301">Tripoli</option><option value="969">Tripoli</option><option value="2007">Triprayar</option><option value="137">Trivandrum</option><option value="1919">Trumbull</option><option value="1397">Tucker</option><option value="477">Tucson</option><option value="492">Tulsa</option><option value="1900">Tumkur</option><option value="1594">Tumsar</option><option value="1105">Tunis</option><option value="1106">Tunisia-Other</option><option value="1761">Tura</option><option value="1721">Turin</option><option value="1108">Turkey-Other</option><option value="1110">Turkmenistan-Other</option><option value="1460">Tustin</option><option value="141">Tuticorin</option><option value="1865">Tuttlingen</option><option value="1111">Tuvalu-Other</option><option value="1384">Twinsburg</option><option value="1425">Tyler</option><option value="1113">UAE</option><option value="142">Udaipur</option><option value="1827">Udhampur</option><option value="421">Udon Thani</option><option value="363">Ufa</option><option value="1115">Uganda-Other</option><option value="143">Ujjain</option><option value="282">Ujung Pandang</option><option value="1116">UK-Other</option><option value="1118">Ukraine-Other</option><option value="1001">Ulaanbaatar</option><option value="1960">Uluberia</option><option value="2016">Ulundurpettai</option><option value="2041">Umaria</option><option value="1714">Umm Al-Quwain</option><option value="1654">Unjha</option><option value="1120">Uruguay-Other</option><option value="220">Urumqi</option><option value="1121">US-Other</option><option value="324">Utrecht</option><option value="1123">Uzbekistan-Other</option><option value="311">Vacoas</option><option value="2008">Vadakkancheri</option><option value="1585">Vadakkencherry</option><option value="1170">Vadinar</option><option value="24">Vadodara</option><option value="971">Vaduz</option><option value="1112">Vaiaku village, Funafuti province</option><option value="2051">Vaishali</option><option value="386">Valencia</option><option value="1687">Vallabh Vidhyanagar</option><option value="394">Valladolid</option><option value="987">Valletta</option><option value="144">Valsad</option><option value="1351">Vance</option><option value="175">Vancouver</option><option value="1125">Vanuatu-Other</option><option value="145">Vapi</option><option value="146">Varanasi</option><option value="1692">Vasai-Virar</option><option value="2058">Vasco da Gama</option><option value="1126">Vatican City</option><option value="1127">Vatican City-Other</option><option value="1385">Vaughan</option><option value="405">Vavuniya</option><option value="1844">Vaxjo</option><option value="2009">Vazhuthacaud</option><option value="2017">Veerapandi</option><option value="147">Vellore</option><option value="1129">Venezuela-Other</option><option value="1375">Veraval</option><option value="1064">Victoria</option><option value="1234">Vienna</option><option value="960">Vientiane</option><option value="1131">Vietnam-Other</option><option value="1217">Vijaynagar</option><option value="148">Vijaywada</option><option value="2018">Villupuram</option><option value="973">Vilnius</option><option value="486">Virginia Beach</option><option value="149">Visakhapatnam</option><option value="1154">Vizag</option><option value="1722">Vladivostok</option><option value="1723">Volgograd</option><option value="1142">Wada</option><option value="436">Wakefield</option><option value="1422">Walnut Creek</option><option value="1536">Waltham</option><option value="1871">Walvis Bay</option><option value="1139">Wani</option><option value="150">Warangal</option><option value="1812">Wardha</option><option value="1403">Warora</option><option value="1732">Warren</option><option value="1810">Warrenville</option><option value="1418">Warrington</option><option value="1037">Warsaw</option><option value="1531">Warton</option><option value="2053">Washim</option><option value="472">Washington</option><option value="1627">Waterloo</option><option value="1616">Wayne</option><option value="1628">Waynesboro</option><option value="327">Wellington</option><option value="1404">West Caldwell</option><option value="1506">West Deptford</option><option value="1558">West Godavari</option><option value="1618">West Indies-Other</option><option value="1471">Wethersfield</option><option value="1520">Weyburn</option><option value="1521">Whitehorse</option><option value="496">Wichita</option><option value="1789">Williamnagar</option><option value="1292">Wilmington</option><option value="1389">Wilsonville</option><option value="1249">Wilton</option><option value="1010">Windhoek</option><option value="1624">Windsor</option><option value="1277">Winnersh</option><option value="180">Winnipeg</option><option value="529">Winston-Salem</option><option value="438">Wirral</option><option value="1540">Wolfsburg</option><option value="1712">Wollongong</option><option value="1733">Wolverhampton</option><option value="1620">Wonogiri</option><option value="1313">Woodland Hills</option><option value="1417">Worcester</option><option value="1433">Worthington</option><option value="191">Wuhan</option><option value="271">Wuppertal</option><option value="212">Wuxi</option><option value="200">Xian</option><option value="236">Xining</option><option value="221">Xinyang</option><option value="219">Xuzhou</option><option value="1534">Yamuna Nagar</option><option value="1286">Yanbu</option><option value="1372">Yangon</option><option value="235">Yangzhou</option><option value="217">Yantai</option><option value="1012">Yaren</option><option value="2052">Yavatmal</option><option value="356">Yekaterinburg</option><option value="1132">Yemen-Other</option><option value="1898">Yerraguntla</option><option value="231">Yichang</option><option value="286">Yokohama</option><option value="552">Yonkers</option><option value="1576">York</option><option value="1212">Zaheerabad</option><option value="1133">Zambia-Other</option><option value="388">Zaragoza</option><option value="197">Zhengzhou</option><option value="237">Zhenjiang</option><option value="206">Zibo</option><option value="1134">Zimbabwe-Other</option><option value="1980">Zira</option><option value="1192">Zirakpur</option><option value="410">Zurich</option>    
+    </select>
+    </div>
+   <!--  <div class="col-md-4 mb-4">
+      <label for="validationServer05">Date Of Birth</label>
+      <input type="date" class="form-control" id="validationServer05" placeholder="Date Of Birth" required>
+      
+    </div> -->
+    <div class="col-md-4 mb-4">
+       <div class="form-group">
+    <label for="inputApply">Applying For</label>
+    <input type="text" class="form-control" id="inputApply" placeholder="Applying For*" name="apply"required>
+    <!-- <select class="form-control " id="inputApply" required>
+      <option value="0" style="display:none;" >Applying For*</option>
+					<option value="62">Accounts, Finance, Tax, Company Secretary, Audit</option><option value="63">Analytics & Business Intelligence</option><option value="64">Architecture, Interior Design</option><option value="65">Defence Forces, Security Services</option><option value="66">Design, Creative, User Experience</option><option value="67">Engineering Design, R&D</option><option value="68">Executive Assistant, Front Office, Data Entry</option><option value="69">Export, Import, Merchandising</option><option value="70">Fashion Designing, Merchandising</option><option value="71">Financial Services, Banking, Investment, Insurance</option><option value="72">Hotels, Restaurants</option><option value="73">HR, Recruitment, Administration, IR</option><option value="75">IT Hardware, Technical Support, Telecom Eng</option><option value="76">IT Software - Application Programme, Maintenance</option><option value="77">IT Software - Client / Server Programming</option><option value="78">IT Software - DBA, Data warehousing</option><option value="79">IT Software - eCommerce, Internet Technologies</option><option value="80">IT Software - Embed, EDA, VLSI, ASIC, Chip Design</option><option value="81">IT Software - ERP, CRM</option><option value="82">IT Software - Mainframe</option><option value="83">IT Software - Middleware</option><option value="84">IT Software - Mobile</option><option value="85">IT Software - Network Administration, Security</option><option value="86">IT Software - Other</option><option value="87">IT Software - QA & Testing</option><option value="88">IT Software - System Programming</option><option value="89">IT Software - Systems, EDP, MIS</option><option value="90">IT Software - Telecom Software</option><option value="74">ITES, BPO, KPO, LPO, Customer Service, Operation</option><option value="91">Journalism, Editing, Content</option><option value="92">Legal, Regulatory, Intellectual Property</option><option value="93">Marketing, Advertising, MR, PR, Media Planning</option><option value="94">Medical, Healthcare, R&D, Pharma, Biotechnology</option><option value="95">Other</option><option value="96">Packaging</option><option value="97">Production, Manufacturing, Maintenance</option><option value="98">Sales, Retail, Business Development</option><option value="99">Self Employed, Entrepreneur, Independent Cons.</option><option value="100">Shipping</option><option value="101">Site Engineering, Project Management</option><option value="102">Strategy, Management Consulting, Corp. Planning</option><option value="103">Supply Chain, Logistics, Purchase, Materials</option><option value="104">Teaching, Education, Training, Counselling</option><option value="105">Top Management</option><option value="106">Travel, Tours, Ticketing, Airlines</option><option value="107">TV, Films, Production, Broadcasting</option>
+    </select> -->
+  </div>
+    </div>
+   		<div class="col-md-4 mb-4">
+      <label for="inputExperience">Work Experience</label>
+        <input class="form-control" type="number" id="inputExperience"
+                placeholder="Total experience in years" name="experience" required>
+      
+    </div>
+        <div class="col-md-4 mb-4">
+      <label for="inputName">Company</label>
+      <input type="text" class="form-control" id="inputCompany" placeholder="Company Name" name="company" required>
+    </div>
+    <div class="col-md-4 mb-4">
+      <label for="inputDate">Date Of Birth</label>
+      <input type="date" class="form-control" id="inputDate" placeholder="Date Of Birth" name="dob" required>
+      
+    </div>
+   		<div class="col-md-4 mb-4">
+      <label for="inputMobile">Mobile Number</label>
+                <input class="form-control" type="tel" id="inputMobile" name="mobile"
+                placeholder="eg. 9999999999" 
+       pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+       required>
+      
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <label for="inputSalary">Current Salary</label>
+                <input class="form-control" type="tel" id="inputSalary" placeholder="Current/Last Annual Salary (INR)*" name="salary"
+       required>
+      
+    </div>
+      
+    </div>
+
+
+  </div>
+
+    <!-- <div class="form-group">
+        <label for="inputDOB">Date of Birth</label>
+        <input class="form-control" type="date" id="inputDOB" />
+    </div> -->
+   <!--  <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input class="form-control" type="email" id="inputEmail"
+                placeholder="Email address" />
+    </div>
+    <div class="form-group">
+        <label for="inputExperience">Work Experience</label>
+        <input class="form-control" type="number" id="inputExperience"
+                placeholder="Total experience in years" />
+    </div>
+ -->
+<div class="container">
+  <div class="form-group">
+    <label for="inputFile">Upload Resume</label>
+    <input type="file" id="inputFile" name="file" required>
+  </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+ </div>
+
+
+</form>
+</div>
+
+	</div>
+ </div>
+
+
+ <!--footer start!-->
+
+
+
+
+
+
+
+
+<section id="footer" class="pt-5">
+		<div class="container">
+			<div class="row text-xs-left text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>About Us</h5>
+						
+					<ul class="list-unstyled quick-links">
+						
+						<li class=""><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Leadership Team</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Media</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Life at Jobetto Services</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>CSR</a></li>
+						
+					</ul>
+					
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Services</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Lower level & Blue collar Hiring</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Teacher Hiring</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>School Hiring</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>College Hiring</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Doctor Hiring</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Executive Search</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Senior & Middle Level Hiring</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Recruitment Process Outsourcing</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Recruitment Marketplace</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Global Sourcing</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Career Transition Services</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Talent Mapping</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Web Designing</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>SEO Services</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Digital Marketing Services</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Contact Us</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
+						<p class="text-white" id="email">jobettoservices@gmail.com</p>
+						<li><a href="javascript:void();"><i class="fa fa-phone" aria-hidden="true"></i>Phone</a></li>
+						<p class="text-white">+919540352227</p>
+						<li><a href="javascript:void();"><i class="fa fa-map-marker" aria-hidden="true"></i>Address</a></li>
+						<p class="text-white">Ramprastha , Ghaziabad 201011</p>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/sapna-sancheti-93268a177/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="mailto:jobettoservices@gmail.com"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					
+					<p class="h6">&copy All right Reversed. Jobettoservices<a class="text-green ml-2"></a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer end -->
+
+
+	
+	
+</body>
+
+<script src="jquery.waypoints.min.js"></script>
+		
+
+<script>
+
+
+$('.js--section-features').waypoint(function(direction) {
+		
+        if (direction == "down") {
+
+            $('nav').addClass('sticky');
+
+        } else {
+            $('nav').removeClass('sticky');
+        }
+    }, {
+      offset: '40px;'
+    });
+	
+
+</script>
+
+<script>
+	$('#mobile-nav-icon-a').click(function(){
+		//console.log('manuj');
+		var nav = $('#main-nav-a');
+		nav.slideToggle(200);
+		$('#mobile-a').delay(1000).toggleClass('fa-bars fa-times');
+	});
+	$('#mobile-nav-icon-b').click(function(){
+		//console.log('manuj');
+		var nav = $('#main-nav-b');
+		nav.slideToggle(200);
+		$('#mobile-b').delay(1000).toggleClass('fa-bars fa-times');
+	});
+	$('#mobile-nav-icon-c').click(function(){
+		//console.log('manuj');
+		var nav = $('#main-nav-c');
+		nav.slideToggle(200);
+		$('#mobile-c').delay(1000).toggleClass('fa-bars fa-times');
+	});
+
+</script>
+
+
+
+<!-- navbar click !-->
+
+<script>
+    
+    var headerHeight=$('.navbig1').outerHeight();
+
+  $('.aboutme').click(function(e) {
+    //alert('manuj');
+    var linkHref = $(this).attr('href');
+    
+    //console.log(headerHeight);
+    //console.log($(linkHref).offset().top);
+    $('html, body').animate({
+
+      scrollTop: $(linkHref).offset().top - headerHeight
+
+    },1000);
+    e.preventDefault();
+  });
+
+
+  </script>
+
+
+  <script>
+    
+    var headerHeight=$('.navbig2').outerHeight();
+
+  $('.aboutme').click(function(e) {
+    //alert('manuj');
+    var linkHref = $(this).attr('href');
+    
+    //console.log(headerHeight);
+    //console.log($(linkHref).offset().top);
+    $('html, body').animate({
+
+      scrollTop: $(linkHref).offset().top - headerHeight
+
+    },1000);
+    e.preventDefault();
+  });
+
+
+  </script>
+
+
+  <script>
+    
+    var headerHeight=$('.cbtn').outerHeight();
+
+  $('.cbtn').click(function(e) {
+    //alert('manuj');
+    var linkHref = $(this).attr('href');
+    
+    //console.log(headerHeight);
+    //console.log($(linkHref).offset().top);
+    $('html, body').animate({
+
+      scrollTop: $(linkHref).offset().top - headerHeight
+
+    },1000);
+    e.preventDefault();
+  });
+
+
+  </script>
+
+
+
+  <script>
+    
+    var headerHeight=$('.navbig3').outerHeight();
+
+  $('.aboutme').click(function(e) {
+    //alert('manuj');
+    var linkHref = $(this).attr('href');
+    
+    //console.log(headerHeight);
+    //console.log($(linkHref).offset().top);
+    $('html, body').animate({
+
+      scrollTop: $(linkHref).offset().top - headerHeight
+
+    },1000);
+    e.preventDefault();
+  });
+
+
+  </script>
+</html>
